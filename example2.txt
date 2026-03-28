@@ -1,0 +1,30 @@
+0: Hey, is this seat taken?
+1: Nope, go ahead!
+0: Thanks. First week chaos, huh?
+1: Seriously. I didn’t expect the library café to be this packed already.
+0: Same. I figured I’d escape the crowds here, but clearly everyone had the same idea.
+1: Guess it’s the combination of caffeine and Wi-Fi.
+0: I’m Alex, by the way.
+1: I’m Maya. Nice to meet you!
+0: So, what are you studying?
+1: Psychology. Lots of reading already… and it’s only week one. You?
+0: Computer science. Which means a lot of coding and pretending I understand what’s going on.
+1: *laughs* Sounds intense. Do you enjoy it?
+0: Yeah, actually. It’s frustrating sometimes, but kind of satisfying when things finally work. What got you into psychology?
+1: I’ve always been curious about how people think and behave. Plus, I want to go into counseling eventually.
+0: That’s awesome. Way more meaningful than debugging code at 2 a.m.
+1: Hey, someone has to build the apps I’ll probably use in my future practice.
+0: Fair point. What classes are you taking this semester?
+1: Intro to Cognitive Psychology, Research Methods, and a stats class I’m already a bit scared of.
+0: Stats? That’s basically math in disguise. Good luck.
+1: Thanks… I’ll need it. What about you?
+0: Programming fundamentals, discrete math, and computer systems. The math one might be my downfall.
+1: Looks like we’re both suffering through numbers in different ways.
+0: At least we can suffer with coffee.
+1: Exactly. Do you usually study here?
+0: I think I might start. It’s actually a nice spot, even if it’s busy.
+1: Same. I was exploring campus and just ended up here.
+0: Well, if you ever need a study buddy—or just someone to complain about stats with…
+1: I might take you up on that.
+0: Cool. First successful university connection?
+1: I’d say so
