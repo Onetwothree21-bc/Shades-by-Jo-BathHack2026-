@@ -1,0 +1,119 @@
+Hey, I’m Sam. What’s your name?
+I’m Priya. Nice to meet you!
+Nice to meet you too. What are you studying?
+I’m studying Computer Science. What about you?
+I’m doing Business Management.
+
+Hi, I’m Jake.
+Hello, I’m Emily. Nice to meet you.
+Nice to meet you too. What course are you on?
+I’m studying Psychology.
+That’s interesting, I’m doing Sociology.
+
+Hey! I’m Alex.
+Hi Alex, I’m Maria.
+Nice to meet you. What are you studying?
+I’m doing Law at the moment.
+That’s great, I’m in Engineering.
+
+Hi, my name’s Ben.
+Hey Ben, I’m Chloe.
+Nice to meet you, Chloe. What’s your course?
+I’m studying English Literature.
+Nice, I’m doing History.
+
+Hey, I’m Daniel.
+Hi Daniel, I’m Sara.
+What are you studying?
+I’m studying Medicine right now.
+Wow, that’s impressive. I’m in Biology.
+
+Hi, I’m Liam. What’s your name?
+I’m Zoe, nice to meet you.
+Nice to meet you too. What course are you on?
+I’m studying Architecture.
+That sounds cool, I’m doing Design.
+
+Hello, I’m Noah.
+Hi Noah, I’m Hannah.
+What do you study?
+I’m studying Economics this year.
+Oh nice, I’m studying Economics too.
+
+Hey, I’m Ethan.
+Hi Ethan, I’m Lily.
+What’s your major?
+I’m doing Chemistry.
+That’s great, I’m studying Physics.
+
+Hi, I’m Oliver.
+Hello, I’m Mia.
+What are you studying?
+I’m studying Philosophy.
+Interesting, I’m doing Political Science.
+
+Hey, I’m Lucas.
+Hi Lucas, I’m Ava.
+What course are you on?
+I’m studying Mathematics.
+Nice, I’m doing Mathematics as well.
+
+Hi, I’m Mason. What’s your name?
+I’m Grace, nice to meet you.
+Nice to meet you too. What are you studying?
+I’m studying Nursing.
+That’s great, I’m doing Public Health.
+
+Hey, I’m Logan.
+Hi Logan, I’m Sophie.
+What course are you studying?
+I’m studying Marketing.
+Nice, I’m doing Finance.
+
+Hi, I’m James.
+Hello, I’m Ella.
+What do you study?
+I’m studying Art.
+That sounds creative, I’m doing Graphic Design.
+
+Hello, I’m Henry.
+Hi Henry, I’m Ruby.
+What’s your course?
+I’m studying Drama.
+Nice, I’m in Film Studies.
+
+Hey, I’m Jack.
+Hi Jack, I’m Isla.
+What are you studying?
+I’m studying Geography.
+Oh nice, I’m studying Geography too.
+
+Hi, I’m Leo. What’s your name?
+I’m Freya, nice to meet you.
+Nice to meet you. What course are you on?
+I’m studying Anthropology.
+That’s interesting, I’m doing Archaeology.
+
+Hey, I’m Ryan.
+Hi Ryan, I’m Evie.
+What are you studying?
+I’m studying Journalism.
+Nice, I’m doing Media Studies.
+
+Hi, I’m Adam.
+Hello Adam, I’m Jessica.
+What course are you on?
+I’m studying Law.
+That’s great, I’m doing Criminology.
+
+Hey, I’m Tom.
+Hi Tom, I’m Lucy.
+What are you studying?
+I’m studying Biology.
+Nice, I’m studying Chemistry.
+
+Hi, I’m Harry.
+Hello Harry, I’m Megan.
+What course are you doing?
+I’m studying Psychology.
+That’s great, I’m in Neuroscience.
