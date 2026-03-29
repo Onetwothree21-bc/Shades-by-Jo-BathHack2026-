@@ -77,7 +77,7 @@ names = {}
 for subtree in result.subtrees():
     if subtree.label() == 'NAME':
         names[subtree.leaves()[-1][2]] = subtree.leaves()[-1][0]  # Store the ID as the value
-
+names = {key: names[key] for key in sorted(names)}  # Remove any names that are also course names
 
 courses = {}
 for subtree in result.subtrees():
