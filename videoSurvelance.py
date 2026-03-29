@@ -14,6 +14,8 @@ base_path = os.path.expanduser("~/TestImage")
 os.makedirs(base_path, exist_ok=True)
 
 db_path = os.path.join(base_path, "Test.jpg")
+print(cv2.getBuildInformation())
+
 
 def initilize(frame,known_faces):
     #if video_capture is None or not video_capture.isOpened():
@@ -32,8 +34,8 @@ def initilize(frame,known_faces):
         print(str(top)+" "+str(bottom)+" "+str(right)+" "+str(left))
 
         # You can access the actual face itself like this:
-        face_image = frame[top:bottom, left:right]
-        pil_image = Image.fromarray(face_image)
+        #face_image = frame[top:bottom, left:right]
+        #pil_image = Image.fromarray(face_image)
         #pil_image.save("temporaryPictures/"+str(tempid)+".jpg")
     
     return newImageProcess
@@ -44,8 +46,10 @@ def imageCheck(known_face_ids, known_face_encodings):
 
     # Get a reference to webcam #0 (the default one)
     
-    video_capture = cv2.VideoCapture('/dev/video0',cv2.CAP_V4L2)
+    video_capture = cv2.VideoCapture(0,cv2.CAP_V4L2)
+    print("Opened: ", video_capture.isOpened())
     ret,frame = video_capture.read()
+    print(frame)
     # Create arrays of known face encodings and their names
     known_faces = (known_face_encodings,known_face_ids)
     
@@ -82,7 +86,7 @@ def imageCheck(known_face_ids, known_face_encodings):
         timestamps.append((0,0))
         while talkingCounter < 2400:
             # Grab a single frame of video
-            #ret, frame = video_capture.read()
+            ret, frame = video_capture.read()
             
             # Only process every other frame of video to save time
             if process_this_frame:
@@ -101,8 +105,8 @@ def imageCheck(known_face_ids, known_face_encodings):
 #
                 #    # You can access the actual face itself like this:
                 #    face_image = frame[top:bottom, left:right]
-                #    pil_image = Image.fromarray(face_image)
-                #    pil_image.show()
+                #    #pil_image = Image.fromarray(face_image)
+                #    #pil_image.show()
 
                 
                 personTalking = detectTalker(frame)
@@ -157,7 +161,7 @@ def imageCheck(known_face_ids, known_face_encodings):
         #    final_slices.append(sum([x for (x,y) in audioSlices if y == id]))
         
         # Release handle to the webcam
-        #video_capture.release()
+        video_capture.release()
         cv2.destroyAllWindows()
         # return                
         print(audio_data)

@@ -14,10 +14,6 @@ def runSystem():
     audioShit, newNum, embeddings = vs.imageCheck(ids, encodings)
     print(audioShit)
     print(str(newNum))
-    if audioShit == (None,None,None):
-        print ("Camera feed not showing")
-        return
-    return
     
     if audioShit != None:
         audioText = st.main(audioShit[0], audioShit[1])
