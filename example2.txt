@@ -5,7 +5,7 @@
 0: Same. I figured I’d escape the crowds here, but clearly everyone had the same idea.
 1: Guess it’s the combination of caffeine and Wi-Fi.
 0: I’m Alex, by the way.
-1: I’m Maya. Nice to meet you!
+1: My name is Maya. Nice to meet you!
 0: So, what are you studying?
 1: I am doing Psychology. Lots of reading already… and it’s only week one. You?
 0: I study Computer Science. Which means a lot of coding and pretending I understand what’s going on.

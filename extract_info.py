@@ -1,3 +1,5 @@
+import string
+
 import nltk
 import re
 import numpy
@@ -15,14 +17,15 @@ text = open('example2.txt', 'r').read()
 text = re.sub(r'[^\x00-\x7F]+', '', text)
 #text = re.sub(r'[^\w\s]', '', text)
 grammar = r"""
-COURSE: {<STUDY>.*<NNP>+}
-        {<STUDY>.*<NN>+}
-        {<STUDY>.*<COURSE>+},
-NAME: {<NAME><NNP>+}
-        {<NAME><NN>+}"""
+#COURSE: {<STUDY>.*<NNP>+}
+#COURSE: {<STUDY>.*<NN>+}
+COURSE: {<STUDY>.*<COURSE>+}
+NAME: {<NAME><NNP>}
+NAME: {<NAME><.*><NNP>}
+NAME: {<NAME><NN>}"""
 
 courses_list = [
-    "architecture", "biomed", "biology", "bio", "business", "management", "chem eng", "chemistry", "civil eng", "computer science", "cs", "electrical eng", "ee", "engineering", "english", "history", "maths", "mathematics", "medicine", "physics", "psychology", "social science", "sociology", "statistics", "MSDS", "economics", "econometrics", "finance", "accounting", "marketing", "operations research", "data science", "artificial intelligence", "machine learning", "deep learning", "natural language processing", "computer vision", "cybersecurity", "software engineering", "web development", "mobile app development", "game development", "cloud computing", "big data", "blockchain", "cryptography", "econ", "mech eng", "languages", "physics", "politics", "sports science", "sport management"
+    "architecture", "biomed", "biology", "bio", "business", "management", "chem", "chemistry", "civil", "computer science", "computer", "science", "cs", "electrical", "ee", "engineering", "eng", "english", "history", "maths", "mathematics", "medicine", "physics", "psychology", "social", "sociology", "statistics", "MSDS", "economics", "econometrics", "finance", "accounting", "marketing", "econ", "mech", "languages", "physics", "politics", "sports", "sport"
 ]
 
 
@@ -34,7 +37,7 @@ def preprocess(text):
     #sentences = nltk.sent_tokenize(text)
     #sentences = [nltk.word_tokenize(sentence) for sentence in sentences]
     sentences = []
-    for line_number, line in enumerate(text.splitlines()):
+    for line in text.splitlines():
         id = line.split(':')[0]
         line = line.split(':')[1]
         sentence = nltk.word_tokenize(line)
@@ -56,13 +59,13 @@ preprocessed_text = preprocess(text)
 #]
 text1 = []
 for (word, tag, id) in preprocessed_text:
-    if ((word == "study") | (word == "studies") | (word == "studying") | (word == "course") | (word == "doing")):
+    if ((word == "study") | (word == "studies") | (word == "studying") | (word == "course") | (word == "doing") | (word == "do")):
         text1.append((word, "STUDY", id))
     elif ((word == "name") | (word == "Im")):
         text1.append((word, "NAME", id))
-    elif (word in courses_list):
+    elif (word.lower() in courses_list):
         text1.append((word, "COURSE", id))
-    else:
+    elif (word not in string.punctuation):
         text1.append((word, tag, id))
 
 result = []
@@ -73,7 +76,7 @@ result = cp.parse(text1)
 names = {}
 for subtree in result.subtrees():
     if subtree.label() == 'NAME':
-        names[subtree.leaves()[1][2]] = subtree.leaves()[1][0]  # Store the ID as the value
+        names[subtree.leaves()[-1][2]] = subtree.leaves()[-1][0]  # Store the ID as the value
 
 
 courses = {}
