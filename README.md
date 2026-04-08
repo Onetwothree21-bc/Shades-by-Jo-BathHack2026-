@@ -1,5 +1,5 @@
 # jozzzzzzzzephine
-Facial recognition sftare to repeat to you important details about people you have previously met.
+Facial recognition softare to repeat to you important details about people you have previously met.
 # Multi-Modal Data Processing System
 
 ## Overview
