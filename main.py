@@ -6,6 +6,7 @@ import extract_info as ei
 import datetime
 import pyttsx3 
 
+
 def runSystem():
 
     conn, cursor = db.init_db(reset=True)
