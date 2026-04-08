@@ -4,7 +4,6 @@
 #3. insert data
 #4. query data
 
-
 import sqlite3
 import json
 import numpy as np
